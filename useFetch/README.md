@@ -1,13 +1,9 @@
-# useForm
+# useFetch
+
+Ejemplo:
 
 ```
-    const initialForm = {
-        name: '',
-        age: 0,
-        email: ''
+    const url = "endPoint de una api";
 
-    }
-
-    const [formValues, handleInputChange, reset] = useForm(initialForm);
-
+    const {data: null, loading: true, error: null} = useFetch(url)
 ```
